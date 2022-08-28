@@ -19,25 +19,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 // Go to https://hardhat.org/config/ to learn more
 
 /**
- * @type import('hardhat/config').HardhatUserConfig
+ * 切记私钥不要上传到仓库 切记 切记
  */
 
 module.exports = {
   solidity: "0.8.4",
-/*
   networks: {
-    "local-devnode": {
-       url: "http://localhost:8545",
-       accounts: { mnemonic: "test test test test test test test test test test test junk" }
-    },
-    "optimistic-kovan": {
-       url: "https://kovan.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
-    },
+    
     "optimism": {
-       url: "https://mainnet.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
+       url: "https://opt-goerli.g.alchemy.com/v2/B20m1IKL0ARnJDx51IpIyt5dPY_L4CRf/",
+       accounts: [ "8b6d21e5a8b2e909cdffc1e9c561011b2b0ed1c37da40012ae5e793e343e6f74" ]
     }
   }
-*/
 };
